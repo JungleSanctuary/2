@@ -1,45 +1,50 @@
 
-# [![](https://raw.githubusercontent.com/FFXIV-CombatReborn/RebornAssets/main/IconAssets/RSR_Icon.png)](https://github.com/FFXIV-CombatReborn/RotationSolverReborn)
+# JungleSanctuary Custom Rotations
 
-**RotationSolverReborn**
+This is a fork of RotationSolverReborn with custom rotations, including a specialized Pictomancer PVP rotation.
 
-![Github Latest Releases](https://img.shields.io/github/downloads/FFXIV-CombatReborn/RotationSolverReborn/latest/total.svg?style=for-the-badge)
-![Github All Releases](https://img.shields.io/github/downloads/FFXIV-CombatReborn/RotationSolverReborn/total.svg?style=for-the-badge)
-![Github License](https://img.shields.io/github/license/FFXIV-CombatReborn/RotationSolverReborn.svg?label=License&style=for-the-badge)
+## Available Rotations
 
-RotationSolverReborn is a community-made fork of the original RotationSolver plugin for Final Fantasy XIV. This tool is designed to enhance your gameplay experience by performing your rotation as optimally as possible, including heals, interrupts, mitigations, and MP management.
+- **Jungle Sanctuary PvP (Pictomancer)**: A custom PVP rotation for Pictomancer with enhanced burst damage and defensive capabilities.
 
-## Features
+## How to Use
 
-- **Dynamic Rotation Guidance aka Training Mode**: Offers real-time suggestions for skill rotations, tailored to your current in-game situation.
-- **Customizable Settings**: Allows users to adjust the rotations based on personal preference, encounter type, and specific boss mechanics.
-- **Comprehensive Database**: Includes an extensive database of class abilities to ensure accurate and effective rotation.
-- **User-Friendly Interface**: Features a clean and intuitive interface, making it easy for players of all levels to navigate and use the plugin effectively.
-- **Regular Updates**: The plugin is regularly updated to reflect the latest game patches, class changes, and user feedback, ensuring it remains relevant and useful.
+### Option 1: Use the Custom Repository
 
-## Installing
-- Enter `/xlsettings` in the chat window and go to the Experimental tab in the opening window.
-- **Skip below the DevPlugins section to the Custom Plugin Repositories section.**
-- Copy and paste the repo.json link into the first free text input field.
-```
-https://raw.githubusercontent.com/FFXIV-CombatReborn/CombatRebornRepo/main/pluginmaster.json
-```
-- Click on the + button and make sure the checkmark beside the new field is set afterwards.
-- **Click on the Save-icon in the bottom right.**
+1. Open FFXIV and log in
+2. Open the RotationSolver plugin configuration
+3. Go to the "Custom Rotations" tab
+4. In the "Custom Rotation Repo" field, enter:
+   ```
+   https://raw.githubusercontent.com/JungleSanctuary/2/main/pluginmaster.json
+   ```
+5. Click "Save" or "Apply"
+6. Click "Update Custom Rotations"
+7. Restart the plugin or game if necessary
+8. Your custom rotations should now be available in the rotation selection
 
-Following these steps, you should be able to see all contained plugins in the Available Plugins tab in the Dalamud Plugin Installer.
-No Plugins will be installed, you have just made them available. You can now select which of these plugins you actually want to install.
+### Option 2: Manual Installation
 
-## Want to contribute?
+1. Download the latest `JungleSanctuaryRotations.dll` from the [Releases](https://github.com/JungleSanctuary/2/releases) page
+2. Place the DLL in your RotationSolver CustomRotations folder:
+   ```
+   %AppData%\XIVLauncher\pluginConfigs\RotationSolver\CustomRotations
+   ```
+3. Restart the plugin or game
+4. Your custom rotations should now be available in the rotation selection
 
-- Create a fork
-- Make your changes
-- Test the changes
-- Create a PR and point it to main
+## How to Compile the DLL
 
-## Links
+If you want to compile the DLL yourself:
 
-The rotations definitions are [here](https://github.com/FFXIV-CombatReborn/RotationSolverReborn/tree/main/BasicRotations).
+1. Make sure you have .NET 7.0 SDK installed
+2. Open a command prompt in the repository directory
+3. Run the following command:
+   ```
+   dotnet build -c Release
+   ```
+4. The compiled DLL will be in the `bin\x64\Release\net7.0-windows` directory
 
-## CN users
-RSR是以最终幻想14国际服的版本进行更新的，对于最终幻想14的简中服用户，卫月链接获取的RSR由于是对标国际服最新版本无法在最终幻想14简中服的版本下使用（会导致无法获取循环等情况），解决方法为选择对应版本的RSR插件，例如现在最终幻想14简中服是7.11版本，在这种情况下，您将使用的是7.1.1.X版本（X同前缀最大数字），对应的版本可以在这个github的发布页面上找到。
+## Original RotationSolverReborn
+
+This is a fork of [RotationSolverReborn](https://github.com/FFXIV-CombatReborn/RotationSolverReborn), a community-made fork of the original RotationSolver plugin for Final Fantasy XIV.
