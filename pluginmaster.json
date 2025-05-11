@@ -1,0 +1,20 @@
+{
+  "Author": "JungleSanctuary",
+  "Name": "JungleSanctuary Custom Rotations",
+  "Description": "Custom rotations for RotationSolver Reborn, including a specialized Pictomancer PVP rotation.",
+  "InternalName": "JungleSanctuaryRotations",
+  "AssemblyVersion": "1.0.0.0",
+  "RepoUrl": "https://github.com/JungleSanctuary/2",
+  "ApplicableVersion": "any",
+  "DalamudApiLevel": 12,
+  "LoadPriority": 0,
+  "IconUrl": "https://raw.githubusercontent.com/FFXIV-CombatReborn/RebornAssets/main/IconAssets/RSR_Icon.png",
+  "Punchline": "Custom rotations for RotationSolver Reborn by JungleSanctuary",
+  "IsHide": false,
+  "IsTestingExclusive": false,
+  "DownloadLinkInstall": "https://github.com/JungleSanctuary/2/archive/refs/heads/main.zip",
+  "DownloadLinkTesting": "https://github.com/JungleSanctuary/2/archive/refs/heads/main.zip",
+  "DownloadLinkUpdate": "https://github.com/JungleSanctuary/2/archive/refs/heads/main.zip",
+  "LastUpdated": "1701234567",
+  "Changelog": "Initial release with custom Pictomancer PVP rotation"
+}
